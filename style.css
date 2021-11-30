@@ -1,0 +1,675 @@
+/********************BALISES DE STRUCTURE********************/
+@font-face {
+    font-family: "montserrat";
+    src: url("fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Kashima";
+    src: url("fonts/Kashima\ Demo.otf");
+}
+
+@font-face {
+    font-family: "xangda";
+    src: url("fonts/Xangda\ Shiny.ttf");
+}
+
+@font-face {
+    font-family: "JAPANESE";
+    src: url("fonts/Japanese3017-Eljn.ttf");
+}
+
+@font-face {
+    font-family: "shineon";
+    src: url("fonts/shineon/ShineOn.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "montserrat";
+}
+
+#container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 1rem
+}
+
+a {
+    display: block;
+}
+
+
+
+.effet-glowy:hover {
+    background-color: black;
+    color: rgba(255, 46, 157, 1);
+    transform: scale(0.8);
+    transition: 0.5s all;
+    -webkit-box-shadow: 0px 0px 30px 7px rgba(255, 46, 157, 1);
+    -moz-box-shadow: 0px 0px 30px 7px rgba(255, 46, 157, 1);
+    box-shadow: 0px 0px 30px 7px rgba(255, 46, 157, 1);
+    border: 0px solid black;
+
+
+}
+
+header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+main {
+    width: 100%;
+}
+
+
+footer {
+    width: 100%;
+}
+
+
+.type {
+    width: 40%;
+    height: 600px;
+    max-height: 600px;
+    overflow: scroll;
+}
+
+.menu {
+    width: 10%;
+    height: 600px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "shineon";
+
+
+
+}
+
+.menu>a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    color: #FFFFFF;
+    background: black;
+}
+
+.video {
+    width: 50%;
+    height: 600px;
+    max-height: 600px;
+
+
+}
+
+/**************************************************************************************/
+
+/******** DISPLAY SUR CHAQUE COLONNE (ARTICLES)********/
+
+.un,
+.deux,
+.trois {
+    display: flex;
+}
+
+/*********************************************
+
+/*MENU DE NAVIGATION*/
+
+#top {
+    width: 10%;
+    position: fixed;
+    left: 89%;
+}
+
+#nav-menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#nav-menu>li {
+    width: 50%;
+    background-color: black;
+    border: 0.1px solid white;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
+
+}
+
+#nav-menu>li:hover {
+    border: 0px;
+
+}
+
+#nav-menu>li>a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+span {
+    width: 100%;
+}
+
+/***********PAGE ADMIN CONNEXION (admin.php)**************/
+#logo-admin {
+    background: url("./img:citybar/LogoSpeakEasy.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    margin: 0 auto;
+    height: 20rem;
+    padding: 2rem;
+}
+
+#content {
+    width: 50%;
+    padding: 5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#pageAdministrateur {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 150%;
+    font-weight: bolder;
+    padding: 2rem;
+}
+
+#encadre {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 0.1px solid white;
+}
+
+#page-admin {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#page-admin>li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.utilisateur {
+    color: white;
+}
+
+.password {
+    width: 90%;
+}
+
+#connection {
+
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#connection>a {
+    text-decoration: none;
+    color: black;
+}
+
+/***********PAGE VALIDATION DE RESERVATION (ajout.php)**************/
+#ajout {
+    color: white;
+    border: 0.1px solid white;
+    padding: 3rem;
+}
+
+
+
+
+/*****************************BANDEAU*****************************/
+.picture {
+    width: calc(100% / 3);
+    height: 400px;
+    max-height: 400px;
+    color: white;
+
+}
+
+#animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+}
+
+
+#animation>h4 {
+    animation: myAnim1 2s ease-in-out 0s infinite normal both;
+
+}
+
+@keyframes myAnim1 {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-35px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#logo {
+    width: 60%;
+    margin: 0 auto;
+    height: 70%;
+    background: url("./img:citybar/LogoSpeakEasy.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+#gauche {
+    background: url("./img:citybar/main2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#centre {
+    background: url("./img:citybar/cityTOKYO.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+#droite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./img:citybar/bar-comptoir.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#experience {
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+    animation: myAnim2 4s linear 2s infinite normal both;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/******************************COCKTAILS****************************/
+/* OVERFLOW SCROLL */
+.best-seller {
+    color: white;
+    padding: 1rem;
+}
+
+.glass {
+    text-align: justify;
+}
+
+.slide {
+    height: 600px;
+    max-height: 600px;
+
+}
+
+.one {
+    background: url("./img/cocktail-copie.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.two {
+    background: url("./img/americano-copie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.three {
+    background: url("./img/caipirinha-copie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.four {
+    background: url("./img/cosmopolitan-copie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.five {
+    background: url("./img/mojito-copie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*************TOUTES LES VIDEOS**************/
+
+
+
+#cocktails {
+    background: url("./videos/video/video1.mp4");
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    transform: scaleX(-1);
+
+
+
+}
+
+#menu-bar {
+    background: url("./videos/video/Ytube.mp4");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+#concert {
+    background: url("./videos/video/concert.mp4");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+/*************TOUTES LES IMAGES**************/
+
+#img-bar {
+    background: url("./img:citybar/bar.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#img-concert {
+    background: url("./img:citybar/img-concert.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img-concert:hover {
+    background-size: 120%;
+    transition: 4s ease-in-out;
+}
+
+
+/************************** FORMULAIRE DE RESERVATION ***********************/
+#img-bar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+#formulaire-resa {
+    position: absolute;
+    background-color: black;
+    color: #FFF;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 89;
+}
+
+#formulaire-resa>ul {
+    width: 95%;
+    margin: 0 auto;
+    list-style: none;
+    display: inline-block;
+    overflow: scroll;
+    font-size: 100%;
+
+}
+
+.bdd {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.intitule {
+    padding: 0.5rem;
+    width: 30%;
+}
+
+.envoieDonnees {
+    border: white 0.1px solid;
+    padding: 0.5rem;
+    width: 60%;
+    border-radius: 20px;
+}
+
+input[type=submit] {
+    color: #ffffff;
+    background-color: rgba(255, 46, 157, 1);
+    font-size: 19px;
+    padding: 15px 50px;
+    cursor: pointer
+}
+
+input[type=submit]:hover {
+    color: rgba(255, 46, 157, 1);
+    background-color: #ffffff;
+
+}
+
+.pass-sanitaire {
+    width: 20%;
+}
+
+.confirm {
+    width: 20%;
+}
+
+#info-covid {
+    font-size: 70%;
+    text-align: justify;
+}
+
+
+
+#animation2 {
+
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    align-self: flex-end;
+}
+
+
+#reservation {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: progress;
+    font-family: "montserrat";
+    border-radius: 40px;
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+/***********TRAITEMENT DES DONNEES (traitement.php)**************/
+
+#bdd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+}
+
+th,
+td {
+    border: 0.1px solid white;
+    padding: 1rem;
+}
+
+#retour {
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+#retour>a {
+    text-decoration: none;
+    color: black;
+}
+
+/******************************LIVE CONCERT****************************/
+#flex-concert,
+#flex-live {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/******************************FOOTER****************************/
+footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border: 2px solid red;
+
+}
+
+#bottom {
+    width: 100%;
+}
+
+#menu-bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    list-style: none;
+}
+
+#menu-bottom>li {
+    font-size: 0.8rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    border: 0.1px solid white;
+
+}
+
+#menu-bottom>li:hover {
+    border: 0px;
+
+}
+
+#menu-bottom>li>a {
+    text-decoration: none;
+    color: white;
+}
